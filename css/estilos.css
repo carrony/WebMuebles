@@ -9,8 +9,59 @@ html
     /* esto hace que 1 rem equivalga a prox a 10 px*/
 }
 
+.nombre-sitio span {
+    color:#037bc0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+/* menú principal */
+#menu-ppal a {
+    display: block;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color:black;
+}
+
+#menu-ppal{
+    display:flex;
+    justify-content: space-evenly;
+    border-top: 0.2rem solid rgba(128, 128, 128, 0.554);
+    border-bottom: 0.2rem solid rgba(128, 128, 128, 0.554);
+
+}
+
+.central {
+    max-width:120rem;
+    margin:0 auto;
+}
+
+#portada {
+    background-image: url(../img/principal.jpg);
+    /* fuerza a que la imagen no se repita*/
+    background-repeat: no-repeat; 
+    /* Alineamos la imagen de fondo */
+    background-position: center center;
+    height:50rem;
+    margin-top:2rem;
+    background-size: cover;
+}
+
 .listado-categorias {
     display:flex;
+    gap:2rem;
 }
 
 .categoria a {
@@ -30,4 +81,14 @@ html
 
 img {
     display:block;
+    max-width:100%;
+}
+
+@media (width < 400px) {
+    .listado-categorias {
+        flex-wrap: wrap;
+    }
+    .categoria {
+        width: 100%;
+    }
 }
