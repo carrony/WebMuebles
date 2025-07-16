@@ -1,0 +1,33 @@
+html, * {
+    box-sizing: border-box; 
+    /* computa el ancho y el alto de los elementos con el margin y el border*/ 
+}
+
+html
+ {
+    font-size:62.5%;
+    /* esto hace que 1 rem equivalga a prox a 10 px*/
+}
+
+.listado-categorias {
+    display:flex;
+}
+
+.categoria a {
+    text-align:center;
+    display:block;
+    font-size: 2rem;
+    text-decoration:none;
+    padding: 2rem;
+}
+
+.categoria a:hover {
+    background-color: #037bc0;
+    color:white;
+    /*border-radius: 0 0 1rem 0;*/
+    border-bottom-right-radius: 1rem;
+}
+
+img {
+    display:block;
+}
