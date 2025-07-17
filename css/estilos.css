@@ -140,6 +140,11 @@ h2 {
     transition: all .4s ease-out;
 }
 
+.producto:hover {
+    transform: scale(110%, 110%);
+    transition: all .5s ease;
+}
+
 .producto img {
     object-fit: cover;
 }
@@ -168,6 +173,25 @@ h2 {
                          'p2 p2 p2 p3 p3 p3'
                          'p4 p4 p5 p5 p6 p6';
     gap:2rem;
+}
+
+
+/* Lista de enlaces */
+.enlaces {
+    display:flex;
+    justify-content: space-between;
+}
+
+.lista-enlaces a {
+    text-decoration: none;
+    display:block;
+    color:black;
+    margin-bottom: .8rem;
+}
+
+.copyright {
+    margin-top: 2rem;
+    text-align:center;
 }
 
 /*
